@@ -1,28 +1,71 @@
+/* General Reset and Base Styles */
 body {
-    text-align: center;
-  }
-  
-  .choice-button {
-    height: 100px;
-    width: 100px;
-    border: none;
-    margin: 15px;
-    background-color: rgb(43, 90, 9);
-    border-radius: 50px;
-    cursor: pointer;
-    flex-wrap: wrap;
-    padding:0px ;
-  
-  }
-  
-  .choice-image {
-    height: 120px;
-    width: 100px;
-  }
-  .reset{
-    color: white;
-    cursor: pointer;
-    background-color: rgb(31, 97, 13);
-    border-radius: 50px;
-    border: 2px solid black;
-  }
+  margin: 0;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f2f2f2;
+  text-align: center;
+  color: #333;
+}
+
+/* Heading */
+h1 {
+  font-size: 2.5rem;
+  color: #2d572c;
+  margin-bottom: 30px;
+}
+
+/* Choice Buttons */
+.choice-button {
+  height: 120px;
+  width: 120px;
+  margin: 15px;
+  background: linear-gradient(to bottom right, #3b8d3c, #2c5d1f);
+  border: 3px solid #1f4012;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.choice-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Images inside buttons */
+.choice-image {
+  height: 90px;
+  width: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Result and Score Display */
+h3 {
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+
+/* Reset Button */
+.reset {
+  padding: 10px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 20px;
+  background-color: #1f6111;
+  color: white;
+  border: 2px solid #000;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.reset:hover {
+  background-color: #145408;
+  transform: scale(1.05);
+}
